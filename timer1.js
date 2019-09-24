@@ -7,7 +7,7 @@ const args = process.argv.slice(2);
 
 // Plays a sound after specified number of seconds
 const timer = function(alarms) {
-  if (alarms[0] >= 0 ) {
+  if (alarms[0] >= 0) {
     setTimeout(() => {
       process.stdout.write('\x07');
       timer(alarms.slice(1));
